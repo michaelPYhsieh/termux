@@ -1,4 +1,4 @@
-# in termux
+# 1. in termux
 ```shell
 rm -rf ~/termux && \
 apt-get update -qq && apt-get upgrade -qqy && \
@@ -10,7 +10,7 @@ chmod +x *.sh && \
 ```
 
 
-# in ubuntu
+# 2. in ubuntu
 ```sh
 apt-get update -qq && apt-get upgrade -qqy && \
 apt-get install -qy git && \
