@@ -1,4 +1,4 @@
-echo "cd && \
+echo "cd ~ && \
 cd termux && \
 ./startubuntu.sh" >> ~/.bash_profile
 
