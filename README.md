@@ -1,11 +1,13 @@
 # 1. in termux
 ```shell
-rm -rf ~/termux && \
 apt-get update -qq && apt-get upgrade -qqy && \
 apt-get install -qy openssh git && \
+rm -rf ~/termux && \
 cd ~ && \
 git clone https://github.com/michaelPYhsieh/termux.git && cd termux && \
 chmod +x *.sh && \
+passwd && \
+sshd && \
 ./install_ubuntu.sh
 ```
 
@@ -14,6 +16,7 @@ chmod +x *.sh && \
 ```sh
 apt-get update -qq && apt-get upgrade -qqy && \
 apt-get install -qy git && \
+rm -rf ~/termux && \
 cd ~ && \
 git clone https://github.com/michaelPYhsieh/termux.git && cd termux && \
 chmod +x *.sh && \
