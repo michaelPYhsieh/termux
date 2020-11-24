@@ -19,7 +19,7 @@ cd termux && chmod +x *.sh && \
 echo "_apt_update ... " && \
 apt-get update -qq && \
 echo "_apt_upgrade ... " && \
-apt-get upgrade -qqy && \
+apt-get -qqy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade && \
 echo "_apt_install ... " && \
 apt-get install -qqy git && \
 rm -rf ~/termux && cd ~ && \
