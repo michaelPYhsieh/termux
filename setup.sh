@@ -4,4 +4,5 @@ cd termux && \
 apt-get install -y \
     wget proot vim openssh git && \
 ./ubuntu.sh -y && \
-./startubuntu.sh
+./startubuntu.sh && \
+echo "??"
