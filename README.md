@@ -22,5 +22,7 @@ echo "_apt_install ... " && \
 apt-get install -qqy git && \
 rm -rf ~/termux && cd ~ && \
 git clone --quiet https://github.com/michaelPYhsieh/termux.git && \
-cd termux && chmod +x *.sh && ./set_ubuntu.sh
+cd termux && chmod +x *.sh && \
+./set_ubuntu.sh
+
 ```
