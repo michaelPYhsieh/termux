@@ -4,6 +4,6 @@ cd termux && \
 
 echo "apt_install ... " && \
 apt-get install -qqy \
-    wget proot vim openssh git && \
+    wget proot vim openssh git > /dev/null && \
 ./ubuntu.sh -y && \
 ./startubuntu.sh
