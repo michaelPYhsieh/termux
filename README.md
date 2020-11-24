@@ -15,7 +15,7 @@ sshd && \
 # 2. in ubuntu
 ```sh
 apt-get update -qq && apt-get upgrade -qqy && \
-apt-get install -qy git && \
+apt-get install -qqy git && \
 rm -rf ~/termux && \
 cd ~ && \
 git clone https://github.com/michaelPYhsieh/termux.git && cd termux && \
