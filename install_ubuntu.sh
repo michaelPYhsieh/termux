@@ -6,4 +6,4 @@ echo "apt_install ... " && \
 apt-get install -qqy \
     wget proot vim openssh git && \
 ./ubuntu.sh -y && \
-./startubuntu.sh > /dev/null
+./startubuntu.sh
