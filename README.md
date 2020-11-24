@@ -1,4 +1,5 @@
 # 1. in termux
+
 ```shell
 echo "_apt_update ... " && \
 apt-get update -qq && \
@@ -15,6 +16,7 @@ cd termux && chmod +x *.sh && \
 ```
 
 # 2. in ubuntu
+
 ```sh
 echo "_apt_update ... " && \
 apt-get update -qq && \
