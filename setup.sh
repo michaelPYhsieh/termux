@@ -3,4 +3,5 @@ apt-get install -y \
 ./ubuntu.sh -y && \ 
 echo "cd && \
 cd termux && \
-./startubuntu.sh" >> ~/.bash_profile
+./startubuntu.sh" >> ~/.bash_profile && \
+./startubuntu.sh
