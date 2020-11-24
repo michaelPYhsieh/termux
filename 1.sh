@@ -1,8 +1,6 @@
 apt-get update &&\
 apt-get upgrade -y &&\
-apt-get install -y \
-    openssh wget proot git &&\
+apt-get install -y git &&\
 cd ~ &&\
-git clone https://github.com/MFDGaming/ubuntu-in-termux.git &&\
-cd ubuntu-in-termux &&\
-chmod +x ubuntu.sh &&\
+git clone https://github.com/michaelPYhsieh/termux.git &&\
+cd termux
