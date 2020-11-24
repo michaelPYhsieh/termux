@@ -1,5 +1,6 @@
 # 1. in termux
 ```shell
+echo "_apt_update ... " && \
 apt-get update -qq && \
 echo "_apt_upgrade ... " && \
 apt-get -qqy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade && \
@@ -15,6 +16,7 @@ cd termux && chmod +x *.sh && \
 
 # 2. in ubuntu
 ```sh
+echo "_apt_update ... " && \
 apt-get update -qq && \
 echo "_apt_upgrade ... " && \
 apt-get upgrade -qqy && \
