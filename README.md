@@ -11,7 +11,7 @@ cd termux && chmod +x *.sh && ./install_ubuntu.sh
 # 2. in ubuntu
 ```sh
 apt-get update -qq && apt-get upgrade -qqy > /dev/null && \
-apt-get install -qqy git && \
+apt-get install -qqy git > /dev/null && \
 rm -rf ~/termux && cd ~ && \
 git clone https://github.com/michaelPYhsieh/termux.git && \
 cd termux && chmod +x *.sh && ./set_ubuntu.sh
