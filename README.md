@@ -1,6 +1,7 @@
 # 1. in termux
 ```shell
-apt-get update -qq && apt-get upgrade -qqy && \
+apt-get update -qq && \
+apt-get -qqy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade && \
 apt-get install -qqy openssh git && \
 echo " !! set termux password !! " && passwd && sshd && \
 rm -rf ~/termux && cd ~ && \
