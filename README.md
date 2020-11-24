@@ -1,9 +1,9 @@
 # 1. in termux
 ```shell
 apt-get update -qq && apt-get upgrade -qqy && \
-apt-get install -qqy openssh git && passwd && sshd && \
+apt-get install -qqy openssh git && sshd && \
 rm -rf ~/termux && cd ~ && \
-git clone https://github.com/michaelPYhsieh/termux.git && \
+git clone --quiet https://github.com/michaelPYhsieh/termux.git && \
 cd termux && chmod +x *.sh && ./install_ubuntu.sh
 ```
 
@@ -13,6 +13,6 @@ cd termux && chmod +x *.sh && ./install_ubuntu.sh
 apt-get update -qq && apt-get upgrade -qqy > /dev/null && \
 apt-get install -qqy git > /dev/null && \
 rm -rf ~/termux && cd ~ && \
-git clone https://github.com/michaelPYhsieh/termux.git && \
+git clone --quiet https://github.com/michaelPYhsieh/termux.git && \
 cd termux && chmod +x *.sh && ./set_ubuntu.sh
 ```
