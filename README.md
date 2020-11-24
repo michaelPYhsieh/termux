@@ -1,4 +1,6 @@
 ```shell
+cd ~ && \
+rm -rf termux && \
 apt-get update && \
 apt-get upgrade -y && \
 apt-get install -y openssh git && \
