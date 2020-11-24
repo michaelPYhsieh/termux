@@ -5,5 +5,5 @@ apt-get install -y openssh git && \
 cd ~ && \
 git clone https://github.com/michaelPYhsieh/termux.git && cd termux && \
 chmod +x *.sh && \
-./install_ubuntu.sh.sh
+./install_ubuntu.sh
 ```
