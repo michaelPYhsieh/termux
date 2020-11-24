@@ -9,6 +9,7 @@ sshd && \
 rm -rf ~/termux && cd ~ && \
 git clone --quiet https://github.com/michaelPYhsieh/termux.git && \
 cd termux && chmod +x *.sh && ./install_ubuntu.sh
+
 ```
 
 # 2. in ubuntu
