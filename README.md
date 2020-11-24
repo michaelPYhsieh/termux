@@ -12,9 +12,7 @@ cd termux && chmod +x *.sh && ./install_ubuntu.sh
 ```sh
 apt-get update -qq && apt-get upgrade -qqy && \
 apt-get install -qqy git && \
-rm -rf ~/termux && \
-cd ~ && \
-git clone https://github.com/michaelPYhsieh/termux.git && cd termux && \
-chmod +x *.sh && \
-./set_ubuntu.sh
+rm -rf ~/termux && cd ~ && \
+git clone https://github.com/michaelPYhsieh/termux.git && \
+cd termux && chmod +x *.sh && ./set_ubuntu.sh
 ```
