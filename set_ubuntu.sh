@@ -1,4 +1,4 @@
-echo " !! set ubuntu user !! " && \
+echo "set_ubuntu_user ... " && \
 adduser ub2 && usermod -aG sudo ub2 && \
 echo "ub2 ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers && \
 echo "cd /home/ub2 && su ub2" > ~/.bash_profile && \
