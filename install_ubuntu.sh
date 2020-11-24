@@ -1,6 +1,6 @@
 echo "cd ~ && \
 cd termux && \
-./startubuntu.sh" >> ~/.bash_profile
+./startubuntu.sh" > ~/.bash_profile
 
 
 apt-get install -y \
