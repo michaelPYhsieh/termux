@@ -5,13 +5,13 @@ printf "\n**apt_update**\n" && \
 apt-get update -qq && \
 printf "\n**apt_upgrade**\n" && \
 apt-get -qqy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade && \
-echo " \n _apt_install ... \n " && \
+printf "\n**apt_install\n**" && \
 apt-get install -qqy openssh git &&\
 sshd && \
 rm -rf ~/termux && cd ~ && \
 git clone --quiet https://github.com/michaelPYhsieh/termux.git && \
 cd termux && chmod +x *.sh && \
-echo "_.sh ... " && \
+printf "\n**run script**\n" && \
 ./install_ubuntu.sh
 
 ```
@@ -19,22 +19,17 @@ echo "_.sh ... " && \
 # 2. in ubuntu
 
 ```sh
-echo " \
-_apt_update ... \
-" && \
+printf "\n**apt_update**\n" && \
 apt-get update -qq && \
-echo " \
-_apt_upgrade ... \
-" && \
+printf "\n**apt_upgrade**\n" && \
 apt-get -qqy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade > /dev/null && \
-echo " \
-_apt_install ... \
-" && \
+printf "\n**apt_install**\n" && \
 apt-get install -qqy git sudo > /dev/null && \
 rm -rf ~/termux && cd ~ && \
 git clone --quiet https://github.com/michaelPYhsieh/termux.git && \
 cd termux && chmod +x *.sh && \
-echo "_.sh ... " && \
+e
+printf "**\nrun script**\n" && \
 ./set_ubuntu.sh
 
 ```
