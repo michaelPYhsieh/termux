@@ -1,7 +1,7 @@
 # 1. in termux
 
 ```shell
-echo " \n _apt_update ... \n " && \
+printf " \n _apt_update ... \n " && \
 apt-get update -qq && \
 echo " \n _apt_upgrade ... \n " && \
 apt-get -qqy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade && \
