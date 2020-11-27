@@ -1,4 +1,5 @@
-echo "cd ~ && \
+echo "sshd && \
+cd ~ && \
 cd termux && \
 ./startubuntu.sh" > ~/.bash_profile
 
