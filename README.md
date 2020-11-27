@@ -1,6 +1,7 @@
 # 1. in termux
 
 ```shell
+printf "******************************************" \
 printf "\n**apt_update**\n" && \
 apt-get update -qq && \
 printf "\n**apt_upgrade**\n" && \
