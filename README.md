@@ -4,16 +4,19 @@
 printf "******************************************" \
 printf "\n**apt_update**\n" && \
 apt-get update -qq && \
+printf "******************************************" \
 printf "\n**apt_upgrade**\n" && \
 apt-get -qqy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade && \
+printf "******************************************" \
 printf "\n**apt_install\n**" && \
-apt-get install -qqy openssh git &&\
-sshd && \
-rm -rf ~/termux && cd ~ && \
-git clone --quiet https://github.com/michaelPYhsieh/termux.git && \
+apt-get install -qqy openssh git sshd && \
+printf "******************************************" \
+rm -rf ~/termux && cd ~ && git clone --quiet https://github.com/michaelPYhsieh/termux.git && \
 cd termux && chmod +x *.sh && \
+printf "******************************************" \
 printf "\n**run script**\n" && \
 ./install_ubuntu.sh
+printf "******************************************" \
 
 ```
 
