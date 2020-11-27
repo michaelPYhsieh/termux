@@ -1,17 +1,11 @@
 # 1. in termux
 
 ```shell
-echo " \
-_apt_update ... \
-" && \
+echo " \n _apt_update ... \n " && \
 apt-get update -qq && \
-echo " \
-_apt_upgrade ... \
-" && \
+echo " \n _apt_upgrade ... \n " && \
 apt-get -qqy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade && \
-echo " \
-_apt_install ... \
-" && \
+echo " \n _apt_install ... \n " && \
 apt-get install -qqy openssh git &&\
 sshd && \
 rm -rf ~/termux && cd ~ && \
