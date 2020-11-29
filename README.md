@@ -31,7 +31,7 @@ apt-get update -qq && \
 printf "\n**apt_upgrade**\n" && \
 apt-get -qqy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade > /dev/null && \
 
-printf "\n**apt_install**\n" && \
+printf "\n**apt_install (long time)**\n" && \
 apt-get install -qqy git sudo > /dev/null && \
 
 rm -rf ~/termux && cd ~ && \
