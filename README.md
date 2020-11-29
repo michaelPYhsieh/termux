@@ -7,7 +7,7 @@ printf "**apt_update**\n\n" && \
 apt-get update -qq && \
 
 printf "**apt_upgrade**\n\n" && \
-apt-get -qqy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade && \
+apt-get -qqy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade > /dev/null && \
 
 printf "**apt_install\n\n**" && \
 apt-get install -qqy openssh git openssh && \
