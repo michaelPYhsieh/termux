@@ -10,7 +10,7 @@ printf "**apt_upgrade**\n\n" && \
 apt-get -qqy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade > /dev/null && \
 
 printf "**apt_install\n\n**" && \
-apt-get install -qqy openssh git openssh && \
+apt-get install -qqy openssh git openssh > /dev/null && \
 
 rm -rf ~/termux && cd ~ && git clone --quiet https://github.com/michaelPYhsieh/termux.git && \
 cd termux && chmod +x *.sh && \
