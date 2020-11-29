@@ -1,6 +1,7 @@
 # 1. in termux
 
 ```shell
+
 printf "******************************************" \
 printf "\n**apt_update**\n" && \
 apt-get update -qq && \
@@ -17,7 +18,6 @@ printf "******************************************" \
 printf "\n**run script**\n" && \
 ./install_ubuntu.sh
 printf "******************************************" \
-printf ""
 
 ```
 
