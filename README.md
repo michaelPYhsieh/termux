@@ -2,22 +2,22 @@
 
 ```shell
 
-printf "******************************************" \
-printf "\n**apt_update**\n" && \
+printf "******************************************\n\n" \
+printf "**apt_update**\n" && \
 apt-get update -qq && \
-printf "******************************************" \
-printf "\n**apt_upgrade**\n" && \
+printf "******************************************\n\n" \
+printf "**apt_upgrade**\n" && \
 apt-get -qqy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade && \
-printf "******************************************" \
-printf "\n**apt_install\n**" && \
+printf "******************************************\n\n" \
+printf "**apt_install\n**" && \
 apt-get install -qqy openssh git openssh && \
-printf "******************************************" \
+printf "******************************************\n\n" \
 rm -rf ~/termux && cd ~ && git clone --quiet https://github.com/michaelPYhsieh/termux.git && \
 cd termux && chmod +x *.sh && \
-printf "******************************************" \
-printf "\n**run script**\n" && \
+printf "******************************************\n\n" \
+printf "**run script**\n" && \
 ./install_ubuntu.sh
-printf "******************************************" \
+printf "******************************************\n\n" \
 printf ""
 
 ```
